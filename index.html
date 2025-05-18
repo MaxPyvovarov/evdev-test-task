@@ -19,7 +19,7 @@
 	<body>
 		<header id="header">
 			<div class="header__headline">
-				<h4 class="ellipsis">
+				<h4>
 					Subscribe to our newsletter and stay updated with the latest arrivals
 					and exclusive offers!
 				</h4>
@@ -50,7 +50,12 @@
 					</div>
 				</div>
 				<div class="header__logo">
-					<img src="./assets/images/logo.svg" alt="logo" />
+					<img src="./assets/images/logo.svg" class="logo-desktop" alt="logo" />
+					<img
+						src="./assets/images/logo-short.svg"
+						class="logo-mobile"
+						alt="logo"
+					/>
 				</div>
 				<div class="header__right">
 					<div class="header__socials relative">
@@ -98,7 +103,7 @@
 							/>
 						</div>
 						<div class="header__actions-buttons">
-							<a href="#">
+							<a href="#" class="favorites">
 								<img src="./assets/icons/heart.svg" alt="Favorites" />
 							</a>
 							<a href="#">
@@ -113,20 +118,47 @@
 			</div>
 			<div class="header__mobile-menu">
 				<div class="mobile-menu__top">
-					<a href="#" class="header__logo"
+					<a href="#" class="mobile-menu__logo"
 						><img src="./assets/images/logo.svg" alt="logo"
 					/></a>
 					<nav class="mobile-nav">
 						<ul class="mobile-nav__list">
-							<li><a href="#">Placeholder</a></li>
+							<li><a href="#">Perfumes</a></li>
+							<li><a href="#">Gifts</a></li>
+							<li><a href="#">Stories</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Our Services</a></li>
 						</ul>
 					</nav>
 				</div>
-				<div class="mobile-menu-bottom">
+				<div class="mobile-menu__bottom">
 					<div class="mobile-menu-bottom__socials">
-						<div class="mobile-menu-bottom__socials-item">
-							<img src="./assets/icons/user.svg" alt="facebook" />
-						</div>
+						<a href="#"
+							><img
+								src="./assets/icons/facebook.svg"
+								alt="facebook"
+								class="mobile-menu-bottom__socials-item facebook"
+						/></a>
+						<a href="#">
+							<img
+								src="./assets/icons/twitter.svg"
+								alt="twitter"
+								class="mobile-menu-bottom__socials-item twitter"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./assets/icons/instagram.svg"
+								alt="instagram"
+								class="mobile-menu-bottom__socials-item instagram"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./assets/icons/youtube.svg"
+								alt="youtube"
+								class="mobile-menu-bottom__socials-item youtube"
+						/></a>
 					</div>
 				</div>
 			</div>

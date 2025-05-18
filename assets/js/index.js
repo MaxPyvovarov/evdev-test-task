@@ -6,8 +6,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 	//Mobile menu
-	const hamburger = document.querySelector('.hamburger-menu');
-	const mobileMenu = document.querySelector('.mobile-menu');
+	const hamburger = document.querySelector('.header__hamburger-menu');
+	const mobileMenu = document.querySelector('.header__mobile-menu');
 	hamburger.addEventListener('click', () => {
 		toggleMobileMenu();
 	});
