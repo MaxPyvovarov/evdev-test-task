@@ -543,6 +543,7 @@ body.backdrop-opened {
 	position: relative;
 	overflow: hidden;
 	border-radius: 16px;
+	/* width: 250px !important; */
 }
 
 .swiper-slide:first-child {
@@ -739,6 +740,17 @@ body.backdrop-opened {
 	.header__actions-buttons .favorites {
 		display: none;
 	}
+
+	.hero__content {
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 40px;
+	}
+
+	.hero__left {
+		max-width: 66%;
+		flex-basis: auto;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -756,6 +768,10 @@ body.backdrop-opened {
 	.logo-desktop {
 		padding-bottom: 6px;
 	}
+
+	.swiper-slide {
+		width: 210px !important;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -769,6 +785,25 @@ body.backdrop-opened {
 		text-overflow: unset;
 		white-space: unset;
 		overflow: unset;
+	}
+
+	#hero {
+		padding: 60px 0;
+	}
+
+	.swiper-slide {
+		.swiper-slide {
+			width: calc(100% - 40px);
+		}
+	}
+
+	.hero__heading {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.mobile-menu__logo {
+		max-width: 170px;
 	}
 }
 
@@ -784,6 +819,14 @@ body.backdrop-opened {
 
 	.header__mobile-menu {
 		padding-top: 12px;
+	}
+
+	#hero {
+		padding: 40px 0;
+	}
+
+	.hero__left {
+		max-width: none;
 	}
 }
 

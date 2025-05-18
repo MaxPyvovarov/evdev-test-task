@@ -20,7 +20,18 @@ window.addEventListener('DOMContentLoaded', () => {
 	}
 
 	const swiper = new Swiper('.hero__swiper', {
-		slidesPerView: 3,
+		slidesPerView: 'auto',
 		spaceBetween: 20,
+		centeredSlides: true,
+		breakpoints: {
+			700: {
+				centeredSlides: false,
+				slidesPerView: 3,
+			},
+		},
+	});
+
+	window.addEventListener('resize', () => {
+		swiper.update();
 	});
 });
