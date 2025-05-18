@@ -12,16 +12,15 @@ window.addEventListener('DOMContentLoaded', () => {
 		toggleMobileMenu();
 	});
 
-	const mobileServices = document.querySelector('.mobile-services-dropdown');
-	mobileServices.addEventListener('click', () => {
-		mobileServices.classList.toggle('active');
-	});
-
 	function toggleMobileMenu() {
 		hamburger.classList.toggle('active');
 		mobileMenu.classList.toggle('active');
 		backdrop.classList.toggle('mobile-open');
 		document.querySelector('body').classList.toggle('backdrop-opened');
-		mobileServices.classList.remove('active');
 	}
+
+	const swiper = new Swiper('.hero__swiper', {
+		slidesPerView: 3,
+		spaceBetween: 20,
+	});
 });

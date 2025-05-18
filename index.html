@@ -13,6 +13,14 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<title>MPyvovarov EVDEV Test Task</title>
 	</head>
@@ -166,9 +174,71 @@
 		</header>
 		<main>
 			<section id="hero">
-				<div class="hero__container container relative"></div>
+				<div class="hero__container container relative">
+					<h1 class="hero__heading">
+						<span>Explore</span>Our Newest <br />Fragrances
+					</h1>
+					<div class="hero__content">
+						<div class="hero__left">
+							<p>
+								Dive into our latest collection of exquisite scents, crafted for
+								discerning connoisseurs like you. Discover the perfect fragrance
+								that complements your unique style and leaves a lasting
+								impression.
+							</p>
+							<div class="hero__cta">
+								<span>Discover our</span>
+								<a class="button-primary" href="#">Latest Additions</a>
+							</div>
+						</div>
+						<div class="hero__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="swiper-slide__image-wrapper">
+										<img src="./assets/images/slider1.jpg" alt="Raees Vert" />
+									</div>
+									<div class="swiper-slide__content">
+										<button class="swiper-slide__explore">
+											Explore more
+
+											<img src="./assets/icons/plus.svg" alt="Plus" />
+										</button>
+										<p class="swiper-slide__label">Raees Vert</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__image-wrapper">
+										<img src="./assets/images/slider2.jpg" alt="Raees Vert" />
+									</div>
+									<div class="swiper-slide__content">
+										<button class="swiper-slide__explore">
+											Explore more
+
+											<img src="./assets/icons/plus.svg" alt="Plus" />
+										</button>
+										<p class="swiper-slide__label">Raees Vert</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide__image-wrapper">
+										<img src="./assets/images/slider3.jpg" alt="Raees Vert" />
+									</div>
+									<div class="swiper-slide__content">
+										<button class="swiper-slide__explore">
+											Explore more
+
+											<img src="./assets/icons/plus.svg" alt="Plus" />
+										</button>
+										<p class="swiper-slide__label">Raees Vert</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="./assets/js/index.js"></script>
 	</body>
 </html>
